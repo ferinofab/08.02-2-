@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+}
+.wrapper {
+}
+header  {
+    background-color: rgba(45, 182, 212, 0.5);
+    padding: 50px 0;
+}
+
+nav {
+    background: #F0F0F0;
+    border-radius: 30px;
+    padding: 10px;
+    max-width: 1319px;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.nav_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.nav_items a {
+    text-decoration: none;
+    color: #1D5D84;
+}
+
+.title_site {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: start;
+}
+
+h1 {
+    font-size: 32px;
+    color: #E5EDEF;
+    width: 40%;
+}
+
+.title_h2 {
+    font-size: 24px;
+    color: #E5EDEF;
+    width: 40%;
+}
+
+.title_btn  {
+    padding: 10px;
+    border: none;
+    background-color: #E9B25B;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #E5EDEF;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 125px;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.img_logo_about {
+    width: 30%;
+    height: 30%;
+}
+
+.img_logo_about img {
+    width: 100%;
+    height: 100%;
+}
+
+.about_h2 {
+    text-align: center;
+}
+
+.about_h2, .left p {
+    color: #1D5D84;
+}
+
+.left p {
+    width: 80%;
+    font-size: 20px;
+}
+
+
+.about_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.about_item {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.about_item p {
+    color: #1D5D84;
+    font-size: 20px;
+}
+
+.last_item_left {
+    width: 100%;
+}
+
+.cources {
+    margin-top: 100px;
+    background: rgba(0, 51, 102, 0.8);
+
+    color: #FFFFFF;
+    padding: 20px 125px;
+
+}
+
+.cource_h2 {
+    text-align: center;
+}
+
+
+.links_cource {
+    margin-top: 50px;
+    margin-bottom: 160px;
+}
+.links_cource ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+}
+
+.links_cource li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card, .card ul {
+
+    border-radius: 30px;
+    background: #F0F0F0;
+    color: #444748;
+
+}
+
+.card h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.card p, .card li{
+    font-size: 20px;
+}
+
+.card button {
+    padding: 10px;
+    background: #E9B25B;
+    color: #E5EDEF;
+    font-size: 20px;
+    width: 50%;
+}
+
+.bottom_card {
+    height: 100px;
+    border-radius: 0 0 30px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first {
+    background-image: url('../img/image 25 (1).png');
+
+}
+
+.second {
+    background-image: url('../img/image.png');
+}
+
+.third {
+    background-image: url('../img/image (1).png');
+}
+
+.fourth {
+    background-image: url('../img/image (2).png');
+}
+
+.up_card {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*/slider*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.wrapper_slider {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 40px 20px;
+    text-align: center;
+}
+.slider button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.slider button:hover {
+    background: #0056b3;
+}
+
+
+
