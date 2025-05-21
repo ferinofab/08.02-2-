@@ -35,7 +35,7 @@
                         </li>
                         
                         <li>
-                            <a href="">Войти</a>
+                            <a href="#" data-link-signIn>Войти</a>
                         </li>
                         <li>
                             <a href="">Личный кабинет</a>
@@ -54,6 +54,67 @@
                     </button>
                 </div>
             </header>
+
+            <div class="signIn">
+                <div class="signIn_wrapper">
+                    <span id="close" class="close">&times;</span>
+                    <img src="" alt="" class=">logo_signIn">
+                    <h2>
+                        Вход
+                    </h2>
+
+                   <div class="form_signIn_wrapper">
+                     <form action="#">
+                        <input type="tel" placeholder="Телефон">
+                        <input type="password" placeholder="Пароль">
+                        <p class="pass_recover">
+                            <a href="">Забыли пароль?</a>
+                        </p>
+                        <input type="submit" placeholder="Войти">
+                    </form>
+                   </div>
+
+                    <div class="link_register">
+                        <p>Нет акакунта? <a href="">Зарегистрироваться</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="signIn">
+                <div class="signIn_wrapper">
+                    <img src="" alt="" class=">logo_signIn">
+                    <h2>
+                        Вход
+                    </h2>
+
+                   <div class="form_signIn_wrapper">
+                     <form action="#">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Фамилия">
+                        <input type="text" placeholder="Отчество">
+                        <input type="text" placeholder="Серия и номер паспорта">
+                        <input type="tel" placeholder="Телефон">
+                        <input type="password" placeholder="Пароль">
+                        <input type="password" placeholder="Повтор пароля">
+                        <div class="agreement">
+                            <input type="checkbox">
+
+                            <label for="">
+                                Педагог
+                            </label>
+                        </div>
+                        <input type="submit" placeholder="Зарегистрироваться">
+                    </form>
+                   </div>
+
+                    <div class="link_register">
+                        <p>Есть акакунт? <a href="">Войти</a></p>
+                    </div>
+                </div>
+            </div> -->
+
 
             <div class="about">
                 <div class="left">
@@ -512,7 +573,8 @@
             <p class="copyright">Copyright © 2010-2024 It-куб.</p>
         </footer>
     </div>
-        <script src="../main.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/signIn.js"></script>
    
 </body>
 </html>
