@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <title>Document</title>
+    <title>Главная</title>
 </head>
 <body>
     <div class="wrapper">
@@ -38,7 +38,7 @@
                             <a href="#" data-link-signIn>Войти</a>
                         </li>
                         <li>
-                            <a href="">Личный кабинет</a>
+                            <a href="../html/personal_account.html">Личный кабинет</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,30 +66,34 @@
                    <div class="form_signIn_wrapper">
                      <form action="#">
                         <input type="tel" placeholder="Телефон">
-                        <input type="password" placeholder="Пароль">
-                        <p class="pass_recover">
-                            <a href="">Забыли пароль?</a>
-                        </p>
-                        <input type="submit" placeholder="Войти">
+                        <div class="pass_item">
+                            <input type="password" placeholder="Пароль">
+                            <p class="pass_recover">
+                                <a href="">Забыли пароль?</a>
+                            </p>
+                        </div>
+                        <input type="submit" placeholder="Войти" class="btn_signIn">
                     </form>
                    </div>
 
                     <div class="link_register">
-                        <p>Нет акакунта? <a href="">Зарегистрироваться</a></p>
+                        <p>Нет акакунта? </p>
+                        <a href="#" data-btn-register>Зарегистрироваться</a>
                     </div>
                 </div>
             </div>
 
 
 
-            <!-- <div class="signIn">
-                <div class="signIn_wrapper">
+            <div class="register">
+                <div class="register_wrapper">
+                    <span id="close_register" class="close">&times;</span>
                     <img src="" alt="" class=">logo_signIn">
                     <h2>
-                        Вход
+                        Регистрация
                     </h2>
 
-                   <div class="form_signIn_wrapper">
+                   <div class="form_register_wrapper">
                      <form action="#">
                         <input type="text" placeholder="Имя">
                         <input type="text" placeholder="Фамилия">
@@ -105,15 +109,16 @@
                                 Педагог
                             </label>
                         </div>
-                        <input type="submit" placeholder="Зарегистрироваться">
+                        <input type="submit" placeholder="Зарегистрироваться" class="btn_register">
                     </form>
                    </div>
 
-                    <div class="link_register">
-                        <p>Есть акакунт? <a href="">Войти</a></p>
+                    <div class="link_login">
+                        <p>Есть акакунт?</p>
+                        <a href="#" data-btn-login>Войти</a>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
 
             <div class="about">
@@ -574,7 +579,7 @@
         </footer>
     </div>
         <script src="../js/main.js"></script>
-        <script src="../js/signIn.js"></script>
+        <script src="../js/modalAuth.js"></script>
    
 </body>
 </html>

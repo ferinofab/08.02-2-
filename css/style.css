@@ -570,7 +570,8 @@ footer a {
 
 /* SIGNIN */
 
-.signIn {
+
+.signIn, .register {
         position: fixed;
         z-index: 1;
         left: 0;
@@ -584,52 +585,98 @@ footer a {
         align-items: center;
 }
 
+.register_wrapper {
+  width: 20%;
+}
 
-.signIn_wrapper {
+.signIn_wrapper, .register_wrapper {
+  padding: 30px;  
   background-color: #307dbcd3;
-  width: 30%;
   border-radius: 40px;
-  height: 40%;
   margin: 0 auto; 
 
 }
 
-.signIn h2 {
+.signIn h2, .register h2 {
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
 
-.form_signIn_wrapper {
+.form_signIn_wrapper, .form_register_wrapper {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
-.signIn form {
+.signIn form, .register form {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
   gap: 30px;
-    outline: none;
-
-}
-
-.signIn form :focus {
   outline: none;
+}
+
+.form_signIn_wrapper input, .form_register_wrapper input {
+  background-color: #D9D9D9;
+  color: black;
+  font-size: 1rem;
+}
+
+.form_signIn_wrapper .btn_signIn, .form_register_wrapper .btn_register {
+  color: #E5EDEF;
+  width: 80%;
+  height: 80%;
+  background-color: #E9B25B;
+  box-shadow: 3px 5px 5px .3px #002d52d3;
+  transition: 3.s ease;
 
 }
+
+.form_signIn_wrapper .btn_signIn:hover, .form_register_wrapper .btn_register:hover  {
+  box-shadow: 5px 7px 10px .5px #002d52d3;
+  translate: 0 5px;
+}
+
+.signIn input:focus, .signIn input:hover, .register input:focus, .register input:hover {
+  translate: 0 5px;
+  box-shadow: 5px 7px 10px .5px #002d52d3;
+  outline: none;
+} 
+
+.pass_recover {
+  padding-top: 6px;
+}
+
+.pass_recover a {
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
 
 .agreement {
   display: flex;
   align-items: center;
 }
 
-.link_register {
+.link_register, .link_login {
   text-align: center;
   padding: 10px;
+  display: flex;
+  gap: 10px;
 }
+.link_register p, .link_login p {
+  color: #FFFFFF;
+}
+
+.link_register a, .link_login a {
+  color: #173445;
+  text-decoration: none;
+}
+
 
 .close{
        position: relative;
