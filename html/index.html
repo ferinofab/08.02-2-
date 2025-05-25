@@ -1,9 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -27,7 +26,7 @@
                         
                         <li>
                             <a href="">
-                                <img src="../img/image 1.png" alt="">
+                                <img src="../img/image 1.png" alt="imege">
                             </a>
                         </li>
                         
@@ -59,21 +58,29 @@
             <div class="signIn">
                 <div class="signIn_wrapper">
                     <span id="close" class="close">&times;</span>
-                    <img src="" alt="" class=">logo_signIn">
+                    <img src="" alt="" class="logo_signIn">
                     <h2>
                         Вход
                     </h2>
 
                    <div class="form_signIn_wrapper">
                      <form action="#">
-                        <input type="tel" placeholder="Телефон">
+                        <div class="item_form">
+                            <span id="SPAN_PHOE"></span>
+                            <input type="text" placeholder="Телефон" id="tel_log">
+                        </div>
+
                         <div class="pass_item">
-                            <input type="password" placeholder="Пароль">
+                            <div class="item_form">
+                                <span id="SPAN_PASS"></span>
+                                <input type="password" placeholder="Пароль" id="pass_log">
+                            </div>
+
                             <p class="pass_recover">
                                 <a href="">Забыли пароль?</a>
                             </p>
                         </div>
-                        <input type="submit" placeholder="Войти" class="btn_signIn">
+                        <input type="submit"  class="btn_signIn" id="signIn">
                     </form>
                    </div>
 
@@ -89,28 +96,58 @@
             <div class="register">
                 <div class="register_wrapper">
                     <span id="close_register" class="close">&times;</span>
-                    <img src="" alt="" class=">logo_signIn">
+                    <!-- <img src="" alt="" class=">logo_signIn"> -->
                     <h2>
                         Регистрация
                     </h2>
 
                    <div class="form_register_wrapper">
                      <form action="#">
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="Фамилия">
-                        <input type="text" placeholder="Отчество">
-                        <input type="text" placeholder="Серия и номер паспорта">
-                        <input type="tel" placeholder="Телефон">
-                        <input type="password" placeholder="Пароль">
-                        <input type="password" placeholder="Повтор пароля">
+                        <div class="item_form">
+                            <span data-span></span>
+                            <input type="text" placeholder="Имя" id="name">
+                        </div>
+
+                        <div class="item_form">
+                            <span data-span></span>                            
+                            <input type="text" placeholder="Фамилия" id="middlename">
+                        </div>
+
+                        <div class="item_form">
+                            <span data-span></span>
+                            <input type="text" placeholder="Отчество" id="lastname">
+                        </div>
+
+                       <div class="item_form">
+                            <span data-span></span>
+                            <input type="tel" placeholder="Телефон" id="phone">
+                       </div>
+
+                       <div class="item_form">
+                            <span data-span></span>
+                            <input type="email" placeholder="Email" id="email">
+                       </div>
+                        
+                       <div class="item_form">
+                            <span data-span></span>
+                            <input type="password" placeholder="Пароль" id="pass">
+                       </div>
+
+                       <div class="item_fotm">
+                            <span data-span></span>
+                            <input type="password" placeholder="Повтор пароля" id="reppass">
+                       </div>
+
                         <div class="agreement">
                             <input type="checkbox">
 
-                            <label for="">
+                            <label>
                                 Педагог
                             </label>
                         </div>
-                        <input type="submit" placeholder="Зарегистрироваться" class="btn_register">
+                        <input type="submit" value="Зарегистрироваться" class="btn_register" id="register">
+
+                        
                     </form>
                    </div>
 
@@ -365,7 +402,6 @@
                 </h2>
 
                 <div class="blocks_news">
-
                     <div class="new">
                         <div class="title_new">
                             <h3>
@@ -419,6 +455,7 @@
                             Читать далее
                         </a>
                     </div>
+                </div>
             </section>
 
             <section class="trust">
@@ -494,10 +531,10 @@
                     Связаться с нами
                 </h2>
 
-                <form action="">
+                <form action="#">
                     <input type="email" placeholder="Введите E-mail">
                     <input type="text" placeholder="Введите ваше сообщение">
-                    <input type="submit" placeholder="Отправить" class="btn_form">
+                    <input type="submit" value="Отправить" class="btn_form">
                 </form>
             </section>
 
@@ -579,8 +616,13 @@
             <p class="copyright">Copyright © 2010-2024 It-куб.</p>
         </footer>
     </div>
+        <script src="../js/validLogin.js" defer></script>
+        <script src="https://unpkg.com/imask"></script>
         <script src="../js/main.js"></script>
         <script src="../js/modalAuth.js"></script>
-   
+            <script src="https://unpkg.com/imask"></script>
+            <script src="../js/validRegister.js"></script>
+
+
 </body>
 </html>
